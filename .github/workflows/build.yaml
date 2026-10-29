@@ -1,0 +1,24 @@
+name: Build add-on
+
+# Збирання й випуск версій наслідуються з AnhoUA/ha-claude: та сама перевірка версії,
+# публікація ghcr.io/anhoua/{arch}-addon-claude_code_go_dev:<версія>, тег і GitHub Release.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "claude_code_go_dev/**"
+      - ".github/workflows/build.yaml"
+  pull_request:
+    paths:
+      - "claude_code_go_dev/**"
+      - ".github/workflows/build.yaml"
+
+jobs:
+  build:
+    uses: AnhoUA/ha-claude/.github/workflows/build.yaml@main
+    permissions:
+      contents: write
+      packages: write
+    with:
+      addon_dir: claude_code_go_dev
