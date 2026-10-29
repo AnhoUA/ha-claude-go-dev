@@ -95,6 +95,8 @@ cd ~/projects && mkdir myapp && cd myapp && go mod init myapp
 
 ```
 ha-claude-go-dev/
+├── AGENTS.md                         # як оновлювати: що йде в базу, що в go-dev
+├── CLAUDE.md                         # підключає AGENTS.md для Claude Code
 ├── repository.yaml
 ├── .github/workflows/build.yaml      # викликає reusable workflow з AnhoUA/ha-claude
 └── claude_code_go_dev/
@@ -107,6 +109,8 @@ ha-claude-go-dev/
 ```
 
 `run.sh` з базового образу перед стартом Claude підключає всі `/etc/claude/init.d/*.sh`. Так go-dev додає свою логіку, не копіюючи стартовий скрипт.
+
+Правила, куди вносити зміни (у базу чи сюди) і як оновлювати доповнення, описано в [`AGENTS.md`](AGENTS.md). Claude Code підхоплює їх автоматично через `CLAUDE.md`.
 
 ---
 
