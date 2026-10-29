@@ -1,5 +1,5 @@
 # Базовий образ — випущена версія доповнення AnhoUA/ha-claude.
 # Щоб перейти на нову версію ha-claude, змініть тег тут і випустіть нову версію go-dev.
 build_from:
-  aarch64: ghcr.io/anhoua/aarch64-addon-claude_code:0.4.3
-  amd64: ghcr.io/anhoua/amd64-addon-claude_code:0.4.3
+  aarch64: ghcr.io/anhoua/aarch64-addon-claude_code:0.4.4
+  amd64: ghcr.io/anhoua/amd64-addon-claude_code:0.4.4
