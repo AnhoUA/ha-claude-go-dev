@@ -1,5 +1,5 @@
 name: Claude Code Go Dev
-version: "0.1.0"
+version: "0.1.1"
 slug: claude_code_go_dev
 description: Claude Code для Home Assistant із Go, git, GitHub CLI та SSH (на базі ha-claude)
 url: https://github.com/AnhoUA/ha-claude-go-dev
@@ -27,10 +27,6 @@ options:
   remote_control: true
   session_name: Home Assistant Go
   storage_path: /share/claude
-  anthropic_api_key: ""
-  git_user_name: ""
-  git_user_email: ""
-  github_token: ""
 schema:
   remote_control: bool
   session_name: str

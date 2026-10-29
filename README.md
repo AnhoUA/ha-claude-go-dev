@@ -38,9 +38,9 @@
 | `remote_control` | `true` | Запускати Claude одразу з Remote Control |
 | `session_name` | `Home Assistant Go` | Назва сесії в списку Remote Control |
 | `storage_path` | `/share/claude` | Постійне сховище для скілів і проєктів |
-| `anthropic_api_key` | — | API-ключ Anthropic; якщо його задано, Remote Control вимикається |
+| `anthropic_api_key` | — | Необов'язкова. Без неї Claude працює з вашою підпискою claude.ai. Якщо ключ задано, Remote Control вимикається |
 
-Додаткові опції:
+Додаткові опції (усі необов'язкові, приховані під *Show unused optional configuration options*):
 
 | Опція | Опис |
 |---|---|
